@@ -1,0 +1,9 @@
+# NER using nltk's ne_chunk
+
+sent = "John is studying at Stanford University in California"
+
+import nltk
+from nltk import ne_chunk
+from nltk import word_tokenize
+
+ne_chunk(nltk.pos_tag(word_tokenize(sent)), binary=False)
